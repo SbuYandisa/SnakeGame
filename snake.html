@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="snake.css" />
+</head>
+<body>
+
+  <canvas id="snakeCanvas" width="400" height="400"></canvas>
+  <br>
+  <button onclick="startGame(1)">Easy Mode</button>
+  <button onclick="startGame(2)">Medium Mode 1</button>
+  <button onclick="startGame(3)">Medium Mode 2</button>
+  <button onclick="startGame(4)">Hard Mode</button>
+  <div class="button-container">
+    <button onclick="startGame()">Start</button>
+    <button onclick="pauseGame()">Pause</button>
+    <button onclick="resetGame()">Reset</button>
+  </div>
+
+  <div id="score">Score: 0</div>
+  <div id="high-score">High Score: 0</div>
+
+  <!-- The Modal -->
+  <div id="myModal">
+    <div id="modalContent">
+      <p>Game Over! Your Score: <span id="finalScore">0</span></p>
+      <button id="modalBtn" onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+  <script src="snake.js"></script>  
+</body>
+</html>
